@@ -1,0 +1,4 @@
+/* hide ad at the very top of page */
+.top_prm {
+    display: none;
+}

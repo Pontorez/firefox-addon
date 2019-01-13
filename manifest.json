@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "UglyFix",
+  "version": "0.1",
+
+  "description": "Fixes for some ugly sites (Jan 13, 2019)",
+
+  "icons": {
+    "48": "icons/icon48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.newsru.com/*"],
+      "css": ["css/newsru.com.css"]
+    }
+  ]
+
+}
