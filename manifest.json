@@ -2,9 +2,9 @@
 
   "manifest_version": 2,
   "name": "UglyFix",
-  "version": "0.2",
+  "version": "0.21",
 
-  "description": "Fixes for some ugly sites (Jan 15, 2019)",
+  "description": "Fixes for some ugly sites (Feb 4, 2019)",
 
   "icons": {
     "48": "icons/icon48.png"
@@ -14,6 +14,16 @@
     {
       "matches": ["*://*.newsru.com/*"],
       "css": ["css/newsru.com.css"]
+    },
+    {
+      "matches": [
+        "http://www.kavkazcenter.com/*",
+        "http://lj.rossia.org/*",
+        "http://lurkmore.to/*",
+        "http://rutracker.org/*"
+      ],
+      "js": ["js/https.js"],
+      "run_at": "document_start"
     }
   ],
 
